@@ -20,7 +20,20 @@ function getWeather(location) {
       const temperature = responseJSON.currentConditions.temp;
       return { address, timezone, conditions, time, temperature };
     })
+    .then(function (data) {
+      console.log(data);
+    })
     .catch(function (error) {
       return error;
     });
 }
+
+const formInputs = {
+  location: document.querySelector("input#location"),
+  search: document.querySelector('input[type="submit"]'),
+};
+
+formInputs.search.addEventListener("click", (event) => {
+  getWeather(formInputs.location.value);
+  event.preventDefault();
+});
