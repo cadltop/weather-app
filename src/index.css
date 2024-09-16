@@ -1,5 +1,5 @@
-:root{
-    font-size: 20px;
+:root {
+  font-size: 20px;
 }
 
 body,
@@ -25,35 +25,36 @@ div#container {
 }
 
 form {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 input {
-    border-radius: 7px;
-    
+  border-radius: 7px;
 }
 input[type="text"] {
-    width: 300px;
-    height: 25px;
-    border-color: grey;
-    border-style: solid;
+  width: 300px;
+  height: 25px;
+  border-color: grey;
+  border-style: solid;
 }
 input[type="submit"] {
-    border-style: none;
-    background-color: grey;
-    color: white;
-    font-weight: bold;
-    padding: 0 10px;
+  border-style: none;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
 table {
-    background-color: grey;
+  display: none;
+  background-color: grey;
 }
 td {
-    background-color: white;
-    padding: 7px;
-    text-align: center;
+  background-color: white;
+  padding: 7px;
+  text-align: center;
 }
-thead td, tr > td:first-child {
-    font-weight: bold;
+thead td,
+tr > td:first-child {
+  font-weight: bold;
 }
