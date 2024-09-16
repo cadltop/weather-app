@@ -1,3 +1,7 @@
+:root{
+    font-size: 20px;
+}
+
 body,
 div#container {
   display: flex;
@@ -18,4 +22,38 @@ div#container {
   background-color: white;
   border-radius: 10px;
   padding: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+input {
+    border-radius: 7px;
+    
+}
+input[type="text"] {
+    width: 300px;
+    height: 25px;
+    border-color: grey;
+    border-style: solid;
+}
+input[type="submit"] {
+    border-style: none;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+table {
+    background-color: grey;
+}
+td {
+    background-color: white;
+    padding: 7px;
+    text-align: center;
+}
+thead td, tr > td:first-child {
+    font-weight: bold;
 }
